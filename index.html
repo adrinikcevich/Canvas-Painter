@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Canvas Painter</title>
+		<meta charset="utf.8">
+
+		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+
+		<!-- FUENTES -->
+		
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@800&family=Comfortaa:wght@300;500;700&family=Nunito:wght@700&family=Pacifico&family=Rajdhani:wght@300;700&family=Ubuntu+Mono&display=swap" rel="stylesheet">
+
+		<meta charset="utf-8">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+
+		<script src="https://kit.fontawesome.com/66abc61ad9.js" crossorigin="anonymous"></script>
+
+	<body>
+		<div id="particles-js"></div>
+		<div id="modal">
+			<h1 class="modal-title">Canvas Painter</h1>
+			<h3 class="modal-desc">Use your creativity.</h3>
+			<button class="modal-button">Start</button>
+		</div>
+
+		<div id="container">
+			<div id="editor">
+				<div id="options">
+					<div class="option-eraserBox option">
+						<span class="option-title">Eraser</span>
+						<div class="option-eraser">
+							<span class="iconify iconify-eraser" data-icon="bi:eraser-fill"></span>
+						</div>
+					</div>
+					<div class="option-pencilBox option hidden">
+						<span class="option-title">Pencil</span>
+						<div class="option-pencil">
+							<span class="iconify iconify-pencil" data-icon="bi:pencil-fill"></span>
+						</div>
+					</div>
+					<div class="option-clearBox option">
+						<span class="option-title">Clear</span>
+						<div class="option-clear">
+							
+							<i class="fas fa-trash"></i>
+						</div>
+					</div>
+					<div class="option-colorBox option">
+						<span class="option-title">Color</span>
+						<input type="color" class="input-color">
+					</div>
+					
+					<div class="option-rangeBox option">
+						<span class="option-title">Line Width</span>
+						<div class="range-value-bg">
+							<span id="range-value" step="1">5</span>
+						</div>
+						<input type="range" class="input-range" min="0" max="10">
+						
+					</div>
+					
+					<button class="download-btn">Download</button>
+					
+				</div>
+				<div class="canvas-container">
+					<canvas id="canvas" height="720px" width="1080px"></canvas>
+				</div>
+				
+				<div class="download-modal hidden">
+					<input type="text" class="art-title" placeholder="Add a title">
+					<img class="img-preview" src="">
+					<div class="download-modal-btn-container">
+						<a class="confirm-download-btn" download="canvaspainter.png" href="">Download</a>
+						<button class="cancel-btn">Cancel</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
+
+		<script src="js/particles.js"></script>
+		<script src="js/mainParticles.js"></script>
+		<script src="js/main.js"></script>
+
+	</body>
+
+	
+</html>
