@@ -117,7 +117,7 @@ const eraserBox = document.querySelector(".option-eraserBox")
 pencilBtn.addEventListener("click",()=>{
     eraserBox.classList.toggle("hidden")
     pencilBox.classList.toggle("hidden")
-    canvas.style.cursor = "url('/cursors/pencil.ico'),auto"
+    canvas.style.cursor = "url('cursors/pencil.ico'),auto"
     ctx.globalCompositeOperation="source-over";
 })
 
