@@ -119,7 +119,7 @@ body{
     position: relative;
 }
 #canvas{
-    cursor: url("cursors/pencil.ico"),auto;
+    cursor: url("../cursors/pencil.ico"),auto;
     background: var(--pink4);
     vertical-align: bottom;
 }
