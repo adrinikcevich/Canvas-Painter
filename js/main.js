@@ -125,7 +125,7 @@ eraserBtn.addEventListener("click",()=>{
     eraserBox.classList.toggle("hidden")
     pencilBox.classList.toggle("hidden")
     ctx.globalCompositeOperation="destination-out";
-    canvas.style.cursor = "url('/cursors/eraser.ico'),auto"
+    canvas.style.cursor = "url('cursors/eraser.ico'),auto"
 })
 const positions = document.querySelector(".positions")
 
